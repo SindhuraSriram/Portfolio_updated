@@ -7,7 +7,7 @@ export default defineConfig({
     react(),
     VitePWA({
       registerType: 'autoUpdate',
-      includeAssets: ['favicon.ico', 'robots.txt'],
+      includeAssets: ['favicon.ico', 'robots.txt', 'sitemap.xml'],
       manifest: {
         name: 'Sindhura Sriram Portfolio',
         short_name: 'Portfolio',
@@ -28,16 +28,7 @@ export default defineConfig({
   ],
   build: {
     outDir: 'dist',
-    sourcemap: true,
-    rollupOptions: {
-      output: {
-        manualChunks: {
-          vendor: ['react', 'react-dom', 'framer-motion'],
-          animations: ['framer-motion'],
-          ui: ['lucide-react']
-        }
-      }
-    }
+    sourcemap: true
   },
   server: {
     port: 3000,
