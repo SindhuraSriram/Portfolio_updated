@@ -1,4 +1,3 @@
-import React from 'react';
 import { Award } from 'lucide-react';
 import { AnimatedSection } from './shared/AnimatedSection';
 import { motion } from 'framer-motion';

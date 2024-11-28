@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 import { Hero } from './components/Hero';
 import { Experience } from './components/Experience';
@@ -13,7 +13,7 @@ import { ThemeToggle } from './components/navigation/ThemeToggle';
 import { SEO } from './components/shared/SEO';
 import { motion, AnimatePresence } from 'framer-motion';
 
-function App() {
+export function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
 
@@ -124,5 +124,3 @@ function App() {
     </div>
   );
 }
-
-export default App;
