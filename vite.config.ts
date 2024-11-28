@@ -7,7 +7,7 @@ export default defineConfig({
     react(),
     VitePWA({
       registerType: 'autoUpdate',
-      includeAssets: ['favicon.ico', 'robots.txt', 'apple-touch-icon.png'],
+      includeAssets: ['favicon.ico', 'robots.txt'],
       manifest: {
         name: 'Sindhura Sriram Portfolio',
         short_name: 'Portfolio',
@@ -18,14 +18,9 @@ export default defineConfig({
         start_url: '/',
         icons: [
           {
-            src: '/icon-192x192.png',
-            sizes: '192x192',
-            type: 'image/png'
-          },
-          {
-            src: '/icon-512x512.png',
-            sizes: '512x512',
-            type: 'image/png'
+            src: '/favicon.ico',
+            sizes: '64x64',
+            type: 'image/x-icon'
           }
         ]
       }
