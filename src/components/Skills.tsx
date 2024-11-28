@@ -7,17 +7,18 @@ const skills = {
     'Python', 'Java', 'C++', 'JavaScript', 'HTML/CSS', 'R', 'MATLAB', 'XML', 'SAS'
   ],
   'Frameworks & Libraries': [
-    'TensorFlow', 'PyTorch', 'Keras', 'OpenCV', 'Pandas', 'NumPy', 'Sklearn', 'PySpark', 'AJAX'
+    'TensorFlow', 'PyTorch', 'Keras', 'OpenCV', 'Pandas', 'NumPy', 'Sklearn', 'PySpark', 'AJAX', 'Llama'
   ],
   'Databases & Cloud': [
     'PostgreSQL', 'Oracle SQL', 'MySQL', 'MongoDB', 'Neo4J', 'Teradata', 'HiveQL', 'AWS', 'Azure', 'Snowflake'
   ],
   'Tools & Platforms': [
-    'Git', 'JIRA', 'Tableau', 'Collibra', 'Erwin', 'Anaconda', 'Jupyter', 'VS Code', 'Miro', 'Trello'
+    'Git', 'JIRA', 'Tableau', 'Collibra', 'Erwin', 'Anaconda', 'Jupyter', 'VS Code', 'Miro', 'Trello', 'MS Office', 'Gretl'
   ],
   'Specialized Skills': [
-    'Machine Learning', 'Deep Learning', 'Neural Networks', 'NLP', 'Data Modeling', 'System Design',
-    'Cloud Computing', 'Distributed Systems', 'REST APIs', 'ETL'
+    'Machine Learning', 'Deep Learning', 'Neural Networks', 'NLP', 'Data Modeling', 'GenAI', 'LLMs',
+    'Data Analysis', 'Data Visualization', 'Cloud Computing', 'Distributed Systems', 
+    'REST APIs', 'ETL', 'Data Governance'
   ]
 };
 
