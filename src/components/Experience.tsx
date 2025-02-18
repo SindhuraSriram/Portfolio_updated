@@ -4,6 +4,19 @@ import { AnimatedSection } from './shared/AnimatedSection';
 
 const experiences = [
   {
+    company: 'University of Florida',
+    location: 'Gainesville, FL, United States',
+    role: 'OPS Research Technician',
+    date: 'April 2024 - Present',
+    icon: Globe,
+    tech: 'Python, TensorFlow, Keras, ConvLSTM, CNN, RCNN, Geospatial Data Analysis',
+    description: [
+      'Developed a predictive framework for yield estimation utilizing ensemble classification models and deep learning architectures like CNNs, significantly improving crop yield forecasting accuracy.',
+      'Implemented a ConvLSTM-based hydrological model to forecast soil moisture and precipitation levels, leveraging spatiotemporal dependencies in remote sensing datasets.',
+      'Engineered a RCNN-based geospatial analysis system to model soil-water-precipitation interactions, enabling high-resolution climate impact predictions for agricultural sustainability.'
+    ]
+  },
+  {
     company: 'Virtusa Corporation',
     location: 'Milpitas, CA, United States',
     role: 'Software Engineer Intern',
@@ -11,36 +24,48 @@ const experiences = [
     icon: Code,
     tech: 'JavaScript, XML, jQuery, Microsoft Azure, REST APIs',
     description: [
-      'Configured custom HTML forms and UI elements with jQuery, AJAX and XML for Verint\'s Case Management, reducing form load times by 15%',
-      'Developed REST API integrations with Azure endpoints, using XSL Transformers and WSDL, improving data processing efficiency by 20%',
-      'Integrated FL Web Service with form adapters to streamline backend processes, enabling efficient data transmission'
+      'Configured custom HTML forms and UI elements with jQuery, AJAX, and XML for Verint\'s Case Management, reducing form load times by 15%.',
+      'Developed REST API integrations with Azure endpoints using XSL Transformers and WSDL, improving data processing efficiency by 20%.',
+      'Integrated FL Web Service with form adapters to streamline backend processes, ensuring efficient data transmission.'
     ]
   },
   {
-    company: 'Tata Consultancy Services',
+    company: 'University of Florida',
+    location: 'Gainesville, FL, United States',
+    role: 'Graduate Research Assistant',
+    date: 'May 2023 - December 2023',
+    icon: Globe,
+    tech: 'Python, Mask R-CNN, QGIS, Remote Sensing, Spatial Analysis',
+    description: [
+      'Orchestrated Arctic-wide Retrogressive Thaw Slump (RTS) detection using Mask R-CNN and ArcticDEM time-series, achieving 99% validation performance for 2,747 RTS, enhancing environmental monitoring precision.',
+      'Performed volumetric RTS change detection using spatial analysis in QGIS, estimating sediment yield at 31,710m³ and analyzing satellite imagery to derive latitudinal dependencies on climate variations beyond 71°N.'
+    ]
+  },
+  {
+    company: 'Tata Consultancy Services (Citi Credit Corp)',
     location: 'Hyderabad, India',
     role: 'Systems Engineer - Data Modeler',
     date: 'September 2021 - December 2022',
     icon: Database,
     tech: 'Erwin Data Modeler, Teradata, Hive, Oracle SQL, Snowflake, Collibra',
     description: [
-      'Optimized Citi Credit Corp\'s data workflows, increasing profitability by 4% and enhancing data modeling, retrieval, and reporting efficiency',
-      'Managed database object creation/modification using HiveQL, Teradata, Oracle SQL and Snowflake improving data retrieval by 30%',
-      'Built scalable ETL processes to handle large volumes of data across multiple platforms',
-      'Collaborated with cross-functional teams to develop data governance frameworks using Collibra and reduced data inconsistencies by 20%'
+      'Restructured Citi Credit Corp’s process workflows, increasing profitability by 4% and enhancing **data modeling, retrieval, and reporting efficiency**.',
+      'Optimized **metadata governance** by implementing **Collibra DGC-based automation**, reducing data inconsistencies by 20% across a **50,000+ user dataset** in retail and mortgage loan processing.',
+      'Directed **database schema modifications** using HiveQL, Teradata, Oracle SQL, and Snowflake, **accelerating query execution times by 30%**.',
+      'Engineered scalable **ETL pipelines** to standardize cross-platform data, reducing **integration errors by 25%** across five different data warehouses.'
     ]
   },
   {
-    company: 'Tata Consultancy Services',
-    location: 'Chennai, India',
+    company: 'Tata Consultancy Services (Citi Credit Corp)',
+    location: 'Hyderabad, India',
     role: 'Systems Engineer - Data Analyst',
     date: 'August 2020 - August 2021',
     icon: Globe,
     tech: 'SAS, Python, PySpark, Tableau, Machine Learning',
     description: [
-      'Analyzed Citi Credit Corp\'s customer data using SAS Studio and Tableau, generating actionable insights through data visualization',
-      'Improved credit data classification with SAS Viya and Python-based machine learning using Neural Networks',
-      'Streamlined data workflows using PySpark with a 30% boost in query performance'
+      'Analyzed **Citi Credit Corp’s customer financial datasets** using **SAS Studio and Tableau**, generating actionable insights through **data visualization-driven decision-making**.',
+      'Improved **mortgage loan classification accuracy** by **6%** through **SAS Viya-powered ML models**, integrating **Neural Networks for enhanced credit risk assessment**.',
+      'Optimized **big data processing pipelines** using **PySpark**, achieving a **30% increase in computational efficiency** for fraud detection workflows.'
     ]
   },
   {
@@ -51,9 +76,9 @@ const experiences = [
     icon: Building2,
     tech: 'Python, Tableau, GRETL, ML, Neural Networks',
     description: [
-      'Built an alternative credit scoring system using Python and neural networks, achieving 96% accuracy',
-      'Applied CNNs to transaction data, boosting credit risk prediction accuracy by 15%',
-      'Automated credit risk classification using regression models and neural networks, improving approval efficiency by 20%'
+      'Designed a **Python-based alternative credit scoring system**, achieving **96% precision** on the German Credit Risk dataset, improving **loan approval decision accuracy**.',
+      'Applied **CNN-based customer risk modeling**, enhancing **credit risk prediction accuracy by 15%**, leading to a **20% increase in automated approval efficiency**.',
+      'Developed **Neural Network-powered regression models** for predictive credit risk classification, optimizing Citi’s **credit scoring and default risk assessment**.'
     ]
   },
   {
@@ -62,11 +87,11 @@ const experiences = [
     role: 'Website Developer Intern',
     date: 'November 2018 - December 2018',
     icon: Code,
-    tech: 'JavaScript, HTML/CSS, MongoDB',
+    tech: 'JavaScript, HTML/CSS, MongoDB, PHP, MySQL',
     description: [
-      'Developed a web-based Gate Pass Generation System using HTML, CSS, and JavaScript to create, track, and manage IT equipment requests',
-      'Implemented form-based data entry and transaction history tracking with PHP and MySQL, improving data management efficiency by 25%',
-      'Designed a real-time dashboard for request tracking and history management, ensuring seamless user experience and system responsiveness'
+      'Developed a **web-based Gate Pass Generation System** with **HTML, CSS, and JavaScript** to manage **IT equipment movement**, ensuring streamlined request tracking.',
+      'Integrated **form-based data entry** with **PHP and MySQL**, improving **data management efficiency by 25%** through real-time database synchronization.',
+      'Designed a **real-time dashboard** for **transaction history tracking**, enhancing **system responsiveness and usability**.'
     ]
   }
 ];
