@@ -4,20 +4,33 @@ import { SkillCard } from './shared/SkillCard';
 
 const skills = {
   'Programming Languages': [
-    'Python', 'Java', 'C++', 'JavaScript', 'HTML/CSS', 'R', 'MATLAB', 'XML', 'SAS'
+    'Python', 'Java', 'C++', 'JavaScript', 'R', 'SAS', 'HTML/CSS', 'MATLAB', 'XML'
   ],
-  'Frameworks & Libraries': [
-    'TensorFlow', 'PyTorch', 'Keras', 'OpenCV', 'Pandas', 'NumPy', 'Sklearn', 'PySpark', 'AJAX'
+  'Machine Learning & AI': [
+    'TensorFlow', 'PyTorch', 'Keras', 'XGBoost', 'Scikit-learn', 'OpenCV',
+    'LangChain', 'Llama', 'Hugging Face', 'PySpark'
   ],
-  'Databases & Cloud': [
-    'PostgreSQL', 'Oracle SQL', 'MySQL', 'MongoDB', 'Neo4J', 'Teradata', 'HiveQL', 'AWS', 'Azure', 'Snowflake'
+  'Databases & Storage': [
+    'PostgreSQL', 'Oracle SQL', 'MySQL', 'MongoDB', 'Neo4J', 'Teradata', 'HiveQL', 'Qdrant', 'Snowflake', 'FAISS', 'ChromaDB'
+  ],
+  'Cloud & DevOps': [
+    'AWS (Glue, Kinesis, CloudWatch)', 'Azure Databricks', 'Docker', 'Kubernetes', 'FastAPI', 'Anaconda'
+  ],
+  'Data Analytics & Visualization': [
+    'Tableau', 'Power BI', 'Pandas', 'NumPy', 'Matplotlib', 'QGIS', 'GRETL'
+  ],
+  'Software Development & APIs': [
+    'REST APIs', 'Flask', 'Django', 'AJAX', 'JSON', 'XML', 'SOAP', 'WSDL'
   ],
   'Tools & Platforms': [
-    'Git', 'JIRA', 'Tableau', 'Collibra', 'Erwin', 'Anaconda', 'Jupyter', 'VS Code', 'Miro', 'Trello'
+    'Git', 'JIRA', 'Collibra', 'Erwin', 'Jupyter', 'VS Code', 'Miro', 'Trello'
+  ],
+  'Office & Productivity Tools': [
+    'Microsoft Office Suite (Excel, Word, PowerPoint)'
   ],
   'Specialized Skills': [
-    'Machine Learning', 'Deep Learning', 'Neural Networks', 'NLP', 'Data Modeling', 'System Design',
-    'Cloud Computing', 'Distributed Systems', 'REST APIs', 'ETL'
+    'Machine Learning', 'Deep Learning', 'Neural Networks', 'NLP', 'Generative AI', 
+    'ETL Processes', 'Data Modeling', 'Cloud Computing', 'Distributed Systems', 'Predictive Analytics'
   ]
 };
 
