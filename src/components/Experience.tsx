@@ -49,10 +49,10 @@ const experiences = [
     icon: Database,
     tech: 'Erwin Data Modeler, Teradata, Hive, Oracle SQL, Snowflake, Collibra',
     description: [
-      'Restructured Citi Credit Corp’s process workflows, increasing profitability by 4% and enhancing **data modeling, retrieval, and reporting efficiency**.',
-      'Optimized **metadata governance** by implementing **Collibra DGC-based automation**, reducing data inconsistencies by 20% across a **50,000+ user dataset** in retail and mortgage loan processing.',
-      'Directed **database schema modifications** using HiveQL, Teradata, Oracle SQL, and Snowflake, **accelerating query execution times by 30%**.',
-      'Engineered scalable **ETL pipelines** to standardize cross-platform data, reducing **integration errors by 25%** across five different data warehouses.'
+      'Restructured Citi Credit Corp’s process workflows, increasing profitability by 4% and enhancing data modeling, retrieval, and reporting efficiency.',
+      'Optimized metadata governance by implementing Collibra DGC-based automation, reducing data inconsistencies by 20% across a 50,000+ user dataset in retail and mortgage loan processing.',
+      'Directed database schema modifications using HiveQL, Teradata, Oracle SQL, and Snowflake, accelerating query execution times by 30%.',
+      'Engineered scalable ETL pipelines to standardize cross-platform data, reducing integration errors by 25% across five different data warehouses.'
     ]
   },
   {
@@ -63,9 +63,9 @@ const experiences = [
     icon: Globe,
     tech: 'SAS, Python, PySpark, Tableau, Machine Learning',
     description: [
-      'Analyzed **Citi Credit Corp’s customer financial datasets** using **SAS Studio and Tableau**, generating actionable insights through **data visualization-driven decision-making**.',
-      'Improved **mortgage loan classification accuracy** by **6%** through **SAS Viya-powered ML models**, integrating **Neural Networks for enhanced credit risk assessment**.',
-      'Optimized **big data processing pipelines** using **PySpark**, achieving a **30% increase in computational efficiency** for fraud detection workflows.'
+      'Analyzed Citi Credit Corp’s customer financial datasets using SAS Studio and Tableau, generating actionable insights through data visualization-driven decision-making.',
+      'Improved mortgage loan classification accuracy by 6% through SAS Viya-powered ML models, integrating Neural Networks for enhanced credit risk assessment.',
+      'Optimized big data processing pipelines using PySpark, achieving a 30% increase in computational efficiency for fraud detection workflows.'
     ]
   },
   {
@@ -76,9 +76,9 @@ const experiences = [
     icon: Building2,
     tech: 'Python, Tableau, GRETL, ML, Neural Networks',
     description: [
-      'Designed a **Python-based alternative credit scoring system**, achieving **96% precision** on the German Credit Risk dataset, improving **loan approval decision accuracy**.',
-      'Applied **CNN-based customer risk modeling**, enhancing **credit risk prediction accuracy by 15%**, leading to a **20% increase in automated approval efficiency**.',
-      'Developed **Neural Network-powered regression models** for predictive credit risk classification, optimizing Citi’s **credit scoring and default risk assessment**.'
+      'Designed a Python-based alternative credit scoring system, achieving 96% precision on the German Credit Risk dataset, improving loan approval decision accuracy.',
+      'Applied CNN-based customer risk modeling, enhancing credit risk prediction accuracy by 15%, leading to a 20% increase in automated approval efficiency.',
+      'Developed Neural Network-powered regression models for predictive credit risk classification, optimizing Citi’s credit scoring and default risk assessment.'
     ]
   },
   {
@@ -89,9 +89,9 @@ const experiences = [
     icon: Code,
     tech: 'JavaScript, HTML/CSS, MongoDB, PHP, MySQL',
     description: [
-      'Developed a **web-based Gate Pass Generation System** with **HTML, CSS, and JavaScript** to manage **IT equipment movement**, ensuring streamlined request tracking.',
-      'Integrated **form-based data entry** with **PHP and MySQL**, improving **data management efficiency by 25%** through real-time database synchronization.',
-      'Designed a **real-time dashboard** for **transaction history tracking**, enhancing **system responsiveness and usability**.'
+      'Developed a web-based Gate Pass Generation System with HTML, CSS, and JavaScript to manage IT equipment movement, ensuring streamlined request tracking.',
+      'Integrated form-based data entry with PHP and MySQL, improving data management efficiency by 25% through real-time database synchronization.',
+      'Designed a real-time dashboard for transaction history tracking, enhancing system responsiveness and usability.'
     ]
   }
 ];
