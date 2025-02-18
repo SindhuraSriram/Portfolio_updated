@@ -25,7 +25,7 @@ export function Contact() {
               icon: Linkedin,
               title: 'LinkedIn',
               content: 'Connect with me',
-              href: 'https://www.linkedin.com/in/sindhurasriram'
+              href: 'https://www.linkedin.com/in/sindhura-sriram/'
             }
           ].map((item, index) => {
             const Icon = item.icon;
