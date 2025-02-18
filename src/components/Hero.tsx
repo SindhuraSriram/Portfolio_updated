@@ -43,15 +43,6 @@ export function Hero() {
             >
               <Github size={24} />
             </motion.a>
-            <motion.a
-              href="https://read.cv/sindhurasriram"
-              target="_blank"
-              rel="noopener noreferrer"
-              whileHover={{ scale: 1.1 }}
-              className="p-3 bg-white dark:bg-dark-card rounded-full shadow-lg hover:text-primary transition-colors"
-            >
-              <FileText size={24} />
-            </motion.a>
           </div>
         </motion.div>
         
