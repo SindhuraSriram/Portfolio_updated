@@ -19,7 +19,7 @@ export function Hero() {
           
           <div className="flex justify-center space-x-6">
             <motion.a
-              href="https://www.linkedin.com/in/sindhurasriram"
+              href="https://www.linkedin.com/in/sindhura-sriram/"
               target="_blank"
               rel="noopener noreferrer"
               whileHover={{ scale: 1.1 }}
