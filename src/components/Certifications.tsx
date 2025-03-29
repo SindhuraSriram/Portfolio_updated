@@ -3,11 +3,10 @@ import { AnimatedSection } from './shared/AnimatedSection';
 import { motion } from 'framer-motion';
 
 const certifications = [
-  'SAS Certified Specialist: Base Programming Using SAS 9.4',
   'AWS Certified Solutions Architect',
+  'SAS Certified Specialist: Base Programming Using SAS 9.4',
+  'IBM Data Science Specialization',
   'Collibra Integration Engineer Learning Path',
-  'Neo4j Certified Professional',
-  'IBM Data Science Specialization'
 ];
 
 export function Certifications() {
