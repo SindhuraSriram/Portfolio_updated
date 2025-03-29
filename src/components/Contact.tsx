@@ -12,8 +12,8 @@ export function Contact() {
             {
               icon: Mail,
               title: 'Email',
-              content: 'sindhura.sriram@ufl.edu',
-              href: 'mailto:sindhura.sriram@ufl.edu'
+              content: 'sriramsindhura@gmail.com',
+              href: 'mailto:sriramsindhura@gmail.com'
             },
             {
               icon: Phone,
