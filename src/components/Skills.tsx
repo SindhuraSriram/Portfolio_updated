@@ -4,35 +4,37 @@ import { SkillCard } from './shared/SkillCard';
 
 const skills = {
   'Programming Languages': [
-    'Python', 'Java', 'C++', 'JavaScript', 'R', 'SAS', 'HTML/CSS', 'MATLAB', 'XML'
+    'Python', 'Java', 'C++', 'JavaScript', 'R', 'SAS', 'MATLAB', 'HTML/CSS', 'XML'
   ],
   'Machine Learning & AI': [
-    'TensorFlow', 'PyTorch', 'Keras', 'XGBoost', 'Scikit-learn', 'OpenCV',
-    'LangChain', 'Llama', 'Hugging Face', 'PySpark'
+    'TensorFlow', 'PyTorch', 'Keras', 'Scikit-learn', 'XGBoost', 'OpenCV',
+    'LangChain', 'Hugging Face', 'LLaMA', 'PySpark', 'NLP', 'Generative AI', 'Neural Networks'
   ],
   'Databases & Storage': [
-    'PostgreSQL', 'Oracle SQL', 'MySQL', 'MongoDB', 'Neo4J', 'Teradata', 'HiveQL', 'Qdrant', 'Snowflake', 'FAISS', 'ChromaDB'
+    'PostgreSQL', 'Oracle SQL', 'MySQL', 'MongoDB', 'Neo4J',
+    'Teradata', 'HiveQL', 'Snowflake', 'FAISS', 'Qdrant', 'ChromaDB'
   ],
-  'Cloud & DevOps': [
-    'AWS (Glue, Kinesis, CloudWatch)', 'Azure Databricks', 'Docker', 'Kubernetes', 'FastAPI', 'Anaconda'
+  'Cloud & MLOps': [
+    'AWS (SageMaker, Glue, Lambda, Kinesis, CloudWatch)', 'Azure (Databricks, App Services)', 
+    'Docker', 'Kubernetes', 'MLflow', 'FastAPI', 'Anaconda'
+  ],
+  'Data Engineering & ETL': [
+    'Apache Airflow', 'ETL Pipelines', 'Data Modeling', 'Data Standardization', 'Big Data Processing'
   ],
   'Data Analytics & Visualization': [
-    'Tableau', 'Power BI', 'Pandas', 'NumPy', 'Matplotlib', 'QGIS', 'GRETL'
+    'Pandas', 'NumPy', 'Matplotlib', 'Tableau', 'Power BI', 'QGIS', 'GRETL'
   ],
-  'Software Development & APIs': [
-    'REST APIs', 'Flask', 'Django', 'AJAX', 'JSON', 'XML', 'SOAP', 'WSDL'
+  'APIs & Backend Frameworks': [
+    'REST APIs', 'SOAP', 'WSDL', 'AJAX', 'JSON', 'Flask', 'Django'
   ],
-  'Tools & Platforms': [
-    'Git', 'JIRA', 'Collibra', 'Erwin', 'Jupyter', 'VS Code', 'Miro', 'Trello'
+  'Development Tools & Platforms': [
+    'Git', 'JIRA', 'VS Code', 'Jupyter', 'Trello', 'Miro', 'Collibra', 'Erwin Data Modeler'
   ],
-  'Office & Productivity Tools': [
-    'Microsoft Office Suite (Excel, Word, PowerPoint)'
-  ],
-  'Specialized Skills': [
-    'Machine Learning', 'Deep Learning', 'Neural Networks', 'NLP', 'Generative AI', 
-    'ETL Processes', 'Data Modeling', 'Cloud Computing', 'Distributed Systems', 'Predictive Analytics'
+  'Office & Productivity': [
+    'Microsoft Excel', 'Word', 'PowerPoint'
   ]
 };
+
 
 export function Skills() {
   return (
