@@ -9,29 +9,29 @@ const experiences = [
     role: 'OPS Research Technician',
     date: 'April 2024 - Present',
     icon: Globe,
-    tech: 'Machine Learning, Deep Learning, Predictive Analytics, Time Series Analysis, Data Preprocessing and Feature Engineering, Long Short-Term Memory (LSTM), Convolutional Neural Networks (CNN), Remote Sensing
-',
-    description: [ 'Developed machine learning and deep learning models for crop yield forecasting using hyperspectral reflectance and plant height data across varying nitrogen rates.', 
-'Applied remote sensing, GIS, and physics-constrained ML techniques to model soil moisture and analyze crop health and response to environmental conditions.', 
-'Designed and evaluated predictive frameworks to support precision agriculture, optimize nitrogen fertilizer application, and improve decision-making for sustainable farming practices.', 
-'Implemented ConvLSTM-based hydrological modeling to forecast soil moisture and precipitation, capturing spatiotemporal patterns using satellite-derived datasets.'
-]
+    tech: 'Machine Learning, Deep Learning, Predictive Analytics, Time Series Analysis, Data Preprocessing and Feature Engineering, Long Short-Term Memory (LSTM), Convolutional Neural Networks (CNN), Remote Sensing',
+    description: [
+      'Developed machine learning and deep learning models for crop yield forecasting using hyperspectral reflectance and plant height data across varying nitrogen rates.',
+      'Applied remote sensing, GIS, and physics-constrained ML techniques to model soil moisture and analyze crop health and response to environmental conditions.',
+      'Designed and evaluated predictive frameworks to support precision agriculture, optimize nitrogen fertilizer application, and improve decision-making for sustainable farming practices.',
+      'Implemented ConvLSTM-based hydrological modeling to forecast soil moisture and precipitation, capturing spatiotemporal patterns using satellite-derived datasets.'
+    ]
   },
- {
-  company: 'Virtusa Corporation',
-  location: 'Milpitas, CA, United States',
-  role: 'Software Engineer Intern',
-  date: 'July 2024 - November 2024',
-  icon: Code,
-  tech: 'JavaScript, XML, jQuery, Microsoft Azure, REST APIs, XSLT, WSDL, Postman, AJAX',
-  description: [
-    'Configured and optimized HTML forms and UI elements using jQuery, AJAX, and XML for Verint’s Case Management portal, reducing form load times by 15%.',
-    'Developed and integrated REST APIs with Azure endpoints using XSL Transformers and WSDL, enhancing data processing efficiency by 20%.',
-    'Implemented backend automation workflows using FL Web Services and chain components to streamline case management and minimize manual intervention.'
-  ]
-},
- {
-    company: 'University of Florida (IFAS) ',
+  {
+    company: 'Virtusa Corporation',
+    location: 'Milpitas, CA, United States',
+    role: 'Software Engineer Intern',
+    date: 'July 2024 - November 2024',
+    icon: Code,
+    tech: 'JavaScript, XML, jQuery, Microsoft Azure, REST APIs, XSLT, WSDL, Postman, AJAX',
+    description: [
+      'Configured and optimized HTML forms and UI elements using jQuery, AJAX, and XML for Verint’s Case Management portal, reducing form load times by 15%.',
+      'Developed and integrated REST APIs with Azure endpoints using XSL Transformers and WSDL, enhancing data processing efficiency by 20%.',
+      'Implemented backend automation workflows using FL Web Services and chain components to streamline case management and minimize manual intervention.'
+    ]
+  },
+  {
+    company: 'University of Florida (IFAS)',
     location: 'Gainesville, FL, United States',
     role: 'Graduate Research Assistant',
     date: 'May 2023 - December 2023',
@@ -42,8 +42,8 @@ const experiences = [
       'Performed pan-Arctic volumetric quantification of RTS-driven mass wasting events, estimating over 327.6 million m³ of permafrost loss and evaluating climate-induced terrain changes.',
       'Integrated spatial analysis using QGIS with satellite and hyperspectral data to quantify the environmental impact of RTS, correlating thaw slump activities with climate variables and carbon release rates.'
     ]
-},
- {
+  },
+  {
     company: 'Tata Consultancy Services (Citi Credit Corp)',
     location: 'Hyderabad, India',
     role: 'Systems Engineer - Data Modeler',
@@ -57,7 +57,7 @@ const experiences = [
       'Optimized data retrieval and reporting processes, accelerating query execution times by 30% through schema restructuring and query optimization.',
       'Built scalable ETL pipelines to standardize data across multiple sources, minimizing integration errors by 25%.'
     ]
-},
+  },
   {
     company: 'Tata Consultancy Services (Citi Credit Corp)',
     location: 'Hyderabad, India',
@@ -70,7 +70,7 @@ const experiences = [
       'Developed ML-powered credit risk classification models using SAS Viya and Neural Networks, improving accuracy by 6%.',
       'Enhanced data processing efficiency by 30% through optimized big data pipelines using PySpark for fraud detection workflows.'
     ]
-},
+  },
   {
     company: 'Tata Consultancy Services',
     location: 'Chennai, India',
@@ -83,7 +83,7 @@ const experiences = [
       'Integrated CNN-based customer risk modeling, increasing credit risk prediction accuracy by 15%.',
       'Engineered neural network-powered regression models for predictive credit risk classification, optimizing loan decision-making efficiency.'
     ]
-},
+  },
   {
     company: 'ITC Limited',
     location: 'Secunderabad, India',
@@ -98,6 +98,7 @@ const experiences = [
     ]
   }
 ];
+
 
 export function Experience() {
   return (
