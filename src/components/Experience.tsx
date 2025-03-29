@@ -75,7 +75,7 @@ const experiences = [
     company: 'Tata Consultancy Services',
     location: 'Chennai, India',
     role: 'Credit Analyst Intern',
-    date: 'January 2020 - May 2020',
+    date: 'January 2020 - Jul 2020',
     icon: Building2,
     tech: 'Python, Tableau, GRETL, Machine Learning, Neural Networks, Data Analysis',
     description: [
