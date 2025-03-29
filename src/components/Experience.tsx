@@ -4,83 +4,85 @@ import { AnimatedSection } from './shared/AnimatedSection';
 
 const experiences = [
   {
-    company: 'University of Florida',
+    company: 'University of Florida (IFAS)',
     location: 'Gainesville, FL, United States',
     role: 'OPS Research Technician',
     date: 'April 2024 - Present',
     icon: Globe,
-    tech: 'Python, TensorFlow, Keras, ConvLSTM, CNN, RCNN, Geospatial Data Analysis',
-    description: [
-      'Developed a predictive framework for yield estimation utilizing ensemble classification models and deep learning architectures like CNNs, significantly improving crop yield forecasting accuracy.',
-      'Implemented a ConvLSTM-based hydrological model to forecast soil moisture and precipitation levels, leveraging spatiotemporal dependencies in remote sensing datasets.',
-      'Engineered a RCNN-based geospatial analysis system to model soil-water-precipitation interactions, enabling high-resolution climate impact predictions for agricultural sustainability.'
-    ]
+    tech: 'Machine Learning, Deep Learning, Predictive Analytics, Time Series Analysis, Data Preprocessing and Feature Engineering, Long Short-Term Memory (LSTM), Convolutional Neural Networks (CNN), Remote Sensing
+',
+    description: [ 'Developed machine learning and deep learning models for crop yield forecasting using hyperspectral reflectance and plant height data across varying nitrogen rates.', 
+'Applied remote sensing, GIS, and physics-constrained ML techniques to model soil moisture and analyze crop health and response to environmental conditions.', 'Designed and evaluated predictive frameworks to support precision agriculture, optimize nitrogen fertilizer application, and improve decision-making for sustainable farming practices.', 
+'Implemented ConvLSTM-based hydrological modeling to forecast soil moisture and precipitation, capturing spatiotemporal patterns using satellite-derived datasets.',
+]
   },
-  {
-    company: 'Virtusa Corporation',
-    location: 'Milpitas, CA, United States',
-    role: 'Software Engineer Intern',
-    date: 'July 2024 - November 2024',
-    icon: Code,
-    tech: 'JavaScript, XML, jQuery, Microsoft Azure, REST APIs',
-    description: [
-      'Configured custom HTML forms and UI elements with jQuery, AJAX, and XML for Verint\'s Case Management, reducing form load times by 15%.',
-      'Developed REST API integrations with Azure endpoints using XSL Transformers and WSDL, improving data processing efficiency by 20%.',
-      'Integrated FL Web Service with form adapters to streamline backend processes, ensuring efficient data transmission.'
-    ]
-  },
-  {
-    company: 'University of Florida',
+ {
+  company: 'Virtusa Corporation',
+  location: 'Milpitas, CA, United States',
+  role: 'Software Engineer Intern',
+  date: 'July 2024 - November 2024',
+  icon: Code,
+  tech: 'JavaScript, XML, jQuery, Microsoft Azure, REST APIs, XSLT, WSDL, Postman, AJAX',
+  description: [
+    'Configured and optimized HTML forms and UI elements using jQuery, AJAX, and XML for Verint’s Case Management portal, reducing form load times by 15%.',
+    'Developed and integrated REST APIs with Azure endpoints using XSL Transformers and WSDL, enhancing data processing efficiency by 20%.',
+    'Implemented backend automation workflows using FL Web Services and chain components to streamline case management and minimize manual intervention.'
+  ]
+},
+ {
+    company: 'University of Florida (IFAS) ',
     location: 'Gainesville, FL, United States',
     role: 'Graduate Research Assistant',
     date: 'May 2023 - December 2023',
     icon: Globe,
-    tech: 'Python, Mask R-CNN, QGIS, Remote Sensing, Spatial Analysis',
+    tech: 'Python, Mask R-CNN, QGIS, Remote Sensing, Spatial Analysis, Deep Learning, Data Interpretation, Image Processing, Time Series Analysis',
     description: [
-      'Orchestrated Arctic-wide Retrogressive Thaw Slump (RTS) detection using Mask R-CNN and ArcticDEM time-series, achieving 99% validation performance for 2,747 RTS, enhancing environmental monitoring precision.',
-      'Performed volumetric RTS change detection using spatial analysis in QGIS, estimating sediment yield at 31,710m³ and analyzing satellite imagery to derive latitudinal dependencies on climate variations beyond 71°N.'
+      'Developed advanced deep learning models using Mask R-CNN and ArcticDEM time-series to detect retrogressive thaw slumps (RTS) across the Arctic, achieving 99% validation accuracy for 2,747 RTS detections.',
+      'Performed pan-Arctic volumetric quantification of RTS-driven mass wasting events, estimating over 327.6 million m³ of permafrost loss and evaluating climate-induced terrain changes.',
+      'Integrated spatial analysis using QGIS with satellite and hyperspectral data to quantify the environmental impact of RTS, correlating thaw slump activities with climate variables and carbon release rates.'
     ]
-  },
-  {
+},
+ {
     company: 'Tata Consultancy Services (Citi Credit Corp)',
     location: 'Hyderabad, India',
     role: 'Systems Engineer - Data Modeler',
     date: 'September 2021 - December 2022',
     icon: Database,
-    tech: 'Erwin Data Modeler, Teradata, Hive, Oracle SQL, Snowflake, Collibra',
+    tech: 'Erwin Data Modeler, Teradata, Hive, Oracle SQL, Snowflake, Collibra, Data Warehousing, ETL',
     description: [
-      'Restructured Citi Credit Corp’s process workflows, increasing profitability by 4% and enhancing data modeling, retrieval, and reporting efficiency.',
-      'Optimized metadata governance by implementing Collibra DGC-based automation, reducing data inconsistencies by 20% across a 50,000+ user dataset in retail and mortgage loan processing.',
-      'Directed database schema modifications using HiveQL, Teradata, Oracle SQL, and Snowflake, accelerating query execution times by 30%.',
-      'Engineered scalable ETL pipelines to standardize cross-platform data, reducing integration errors by 25% across five different data warehouses.'
+      'Spearheaded data management initiatives, increasing Citi Credit Corp’s profitability by 4% through advanced warehousing and ETL techniques.',
+      'Led the design and implementation of comprehensive data models using Erwin, HiveQL, Teradata, and Oracle SQL, boosting customer satisfaction by 25%.',
+      'Enhanced metadata governance by automating Collibra DGC workflows, reducing data inconsistencies by 20% across a 50,000+ user dataset.',
+      'Optimized data retrieval and reporting processes, accelerating query execution times by 30% through schema restructuring and query optimization.',
+      'Built scalable ETL pipelines to standardize data across multiple sources, minimizing integration errors by 25%.'
     ]
-  },
+},
   {
     company: 'Tata Consultancy Services (Citi Credit Corp)',
     location: 'Hyderabad, India',
     role: 'Systems Engineer - Data Analyst',
     date: 'August 2020 - August 2021',
     icon: Globe,
-    tech: 'SAS, Python, PySpark, Tableau, Machine Learning',
+    tech: 'SAS, Python, PySpark, Tableau, Machine Learning, Data Visualization',
     description: [
-      'Analyzed Citi Credit Corp’s customer financial datasets using SAS Studio and Tableau, generating actionable insights through data visualization-driven decision-making.',
-      'Improved mortgage loan classification accuracy by 6% through SAS Viya-powered ML models, integrating Neural Networks for enhanced credit risk assessment.',
-      'Optimized big data processing pipelines using PySpark, achieving a 30% increase in computational efficiency for fraud detection workflows.'
+      'Conducted statistical analysis on Citi Credit Corp’s credit data using SAS Studio, deriving actionable insights for customer credit services.',
+      'Developed ML-powered credit risk classification models using SAS Viya and Neural Networks, improving accuracy by 6%.',
+      'Enhanced data processing efficiency by 30% through optimized big data pipelines using PySpark for fraud detection workflows.'
     ]
-  },
+},
   {
     company: 'Tata Consultancy Services',
     location: 'Chennai, India',
     role: 'Credit Analyst Intern',
     date: 'January 2020 - May 2020',
     icon: Building2,
-    tech: 'Python, Tableau, GRETL, ML, Neural Networks',
+    tech: 'Python, Tableau, GRETL, Machine Learning, Neural Networks, Data Analysis',
     description: [
-      'Designed a Python-based alternative credit scoring system, achieving 96% precision on the German Credit Risk dataset, improving loan approval decision accuracy.',
-      'Applied CNN-based customer risk modeling, enhancing credit risk prediction accuracy by 15%, leading to a 20% increase in automated approval efficiency.',
-      'Developed Neural Network-powered regression models for predictive credit risk classification, optimizing Citi’s credit scoring and default risk assessment.'
+      'Developed a machine learning-based credit scoring system with 96% precision using the German Credit Risk dataset, enhancing loan approval accuracy.',
+      'Integrated CNN-based customer risk modeling, increasing credit risk prediction accuracy by 15%.',
+      'Engineered neural network-powered regression models for predictive credit risk classification, optimizing loan decision-making efficiency.'
     ]
-  },
+},
   {
     company: 'ITC Limited',
     location: 'Secunderabad, India',
