@@ -10,20 +10,16 @@ export function About() {
             <h2 className="text-4xl font-bold mb-8 text-gradient">About Me</h2>
             <div className="space-y-6 text-lg text-gray-600 dark:text-gray-300">
               <p>
-                I'm a software engineer with over 3 years of experience in data modeling, machine learning, 
-                and full-stack development. Currently pursuing my Master's in Computer Science at the 
-                University of Florida, I'm passionate about building scalable solutions and solving complex 
-                problems through technology.
+                I’m a Software Engineer with over 3 years of experience in data modeling, machine learning, and full-stack development. Currently pursuing my Master’s in Computer Science at the University of Florida, I’m passionate about building scalable solutions and solving complex problems through technology.
               </p>
               <p>
-                My expertise spans across data engineering, machine learning, and cloud platforms. I've 
-                worked on projects ranging from credit risk analysis systems to real-time fraud detection, 
-                always focusing on delivering high-impact solutions.
+                My work spans the intersection of machine learning, MLOps, and cloud architecture, where I build and scale intelligent systems that solve real-world problems. From credit risk scoring to real-time fraud detection, I’ve developed end-to-end solutions that integrate data pipelines, model training, and deployment in production environments.
               </p>
               <p>
-                I'm particularly interested in the intersection of machine learning and software engineering, 
-                where I can leverage both domains to create innovative solutions. When I'm not coding, I enjoy 
-                exploring new technologies and contributing to open-source projects.
+                I’m particularly passionate about the operationalization of ML models, using tools like Docker, AWS SageMaker, Azure, MLflow, and integrating them into robust, cloud-native architectures. My experience also includes building LLM-based chatbots, contributing to climate research using deep learning, and maintaining a strong focus on performance, accuracy, and impact.
+              </p>
+              <p>
+                When I’m not working on technical projects, you’ll find me exploring emerging AI tools, fine-tuning open-source models, or collaborating with the tech community to learn and contribute.
               </p>
             </div>
           </div>
