@@ -12,8 +12,9 @@ const experiences = [
     tech: 'Machine Learning, Deep Learning, Predictive Analytics, Time Series Analysis, Data Preprocessing and Feature Engineering, Long Short-Term Memory (LSTM), Convolutional Neural Networks (CNN), Remote Sensing
 ',
     description: [ 'Developed machine learning and deep learning models for crop yield forecasting using hyperspectral reflectance and plant height data across varying nitrogen rates.', 
-'Applied remote sensing, GIS, and physics-constrained ML techniques to model soil moisture and analyze crop health and response to environmental conditions.', 'Designed and evaluated predictive frameworks to support precision agriculture, optimize nitrogen fertilizer application, and improve decision-making for sustainable farming practices.', 
-'Implemented ConvLSTM-based hydrological modeling to forecast soil moisture and precipitation, capturing spatiotemporal patterns using satellite-derived datasets.',
+'Applied remote sensing, GIS, and physics-constrained ML techniques to model soil moisture and analyze crop health and response to environmental conditions.', 
+'Designed and evaluated predictive frameworks to support precision agriculture, optimize nitrogen fertilizer application, and improve decision-making for sustainable farming practices.', 
+'Implemented ConvLSTM-based hydrological modeling to forecast soil moisture and precipitation, capturing spatiotemporal patterns using satellite-derived datasets.'
 ]
   },
  {
