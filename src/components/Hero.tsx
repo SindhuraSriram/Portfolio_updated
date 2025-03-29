@@ -14,7 +14,7 @@ export function Hero() {
           <h2 className="text-2xl text-gray-600 dark:text-gray-400">Hello, I'm</h2>
           <h1 className="text-7xl font-bold text-gradient">Sindhura Sriram</h1>
           <p className="text-3xl text-gray-600 dark:text-gray-400">
-            Software Engineer & ML Enthusiast
+            Software Engineer  |  ML & Data Engineering Enthusiast
           </p>
           
           <div className="flex justify-center space-x-6">
