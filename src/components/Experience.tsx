@@ -1,5 +1,5 @@
-import React from 'react';
-import { Building2, Code, Database, Globe } from 'lucide-react';
+import React, { useState } from 'react';
+import { Building2, Code, Database, Globe, ChevronDown, ChevronUp } from 'lucide-react';
 import { AnimatedSection } from './shared/AnimatedSection';
 
 const experiences = [
@@ -99,35 +99,59 @@ const experiences = [
   }
 ];
 
-
 export function Experience() {
+  const [openExperience, setOpenExperience] = useState<number | null>(null);
+
+  const toggleExperience = (index: number) => {
+    setOpenExperience(openExperience === index ? null : index);
+  };
+
   return (
     <section id="experience" className="py-24 bg-white dark:bg-dark">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-4xl font-bold text-center mb-16 dark:text-dark-text-primary">Professional Experience</h2>
-        <div className="space-y-12">
+        <div className="space-y-6">
           {experiences.map((exp, index) => {
             const Icon = exp.icon;
+            const isOpen = openExperience === index;
+
             return (
               <AnimatedSection key={index}>
-                <div className="bg-white dark:bg-dark-card rounded-2xl p-8 card-shadow">
-                  <div className="flex items-start gap-6">
-                    <div className="flex-shrink-0">
-                      <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
-                        <Icon size={24} className="text-primary" />
+                <div className="bg-white dark:bg-dark-card rounded-2xl overflow-hidden card-shadow">
+                  <button
+                    onClick={() => toggleExperience(index)}
+                    className="w-full text-left p-8 focus:outline-none hover:bg-gray-50 dark:hover:bg-gray-800/50 transition-colors"
+                  >
+                    <div className="flex items-start gap-6">
+                      <div className="flex-shrink-0">
+                        <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
+                          <Icon size={24} className="text-primary" />
+                        </div>
+                      </div>
+                      <div className="flex-grow">
+                        <div className="flex justify-between items-start">
+                          <div>
+                            <h3 className="text-xl font-semibold text-gray-900 dark:text-dark-text-primary">{exp.role}</h3>
+                            <p className="text-primary font-medium">{exp.company}</p>
+                            <p className="text-gray-600 dark:text-dark-text-secondary">{exp.location}</p>
+                          </div>
+                          <div className="flex items-center gap-4">
+                            <span className="text-gray-500 dark:text-dark-text-secondary text-sm bg-gray-100 dark:bg-gray-800 px-3 py-1 rounded-full">
+                              {exp.date}
+                            </span>
+                            {isOpen ? (
+                              <ChevronUp className="text-gray-500" size={20} />
+                            ) : (
+                              <ChevronDown className="text-gray-500" size={20} />
+                            )}
+                          </div>
+                        </div>
                       </div>
                     </div>
-                    <div className="flex-grow">
-                      <div className="flex justify-between items-start mb-4">
-                        <div>
-                          <h3 className="text-xl font-semibold text-gray-900 dark:text-dark-text-primary">{exp.role}</h3>
-                          <p className="text-primary font-medium">{exp.company}</p>
-                          <p className="text-gray-600 dark:text-dark-text-secondary">{exp.location}</p>
-                        </div>
-                        <span className="text-gray-500 dark:text-dark-text-secondary text-sm bg-gray-100 dark:bg-gray-800 px-3 py-1 rounded-full">
-                          {exp.date}
-                        </span>
-                      </div>
+                  </button>
+                  
+                  <div className={`overflow-hidden transition-all duration-300 ease-in-out ${isOpen ? 'max-h-[1000px] opacity-100' : 'max-h-0 opacity-0'}`}>
+                    <div className="p-8 pt-0">
                       <div className="mb-4">
                         <span className="text-sm font-medium text-gray-600 dark:text-dark-text-secondary bg-gray-100 dark:bg-gray-800 px-3 py-1 rounded-full">
                           {exp.tech}
@@ -152,3 +176,4 @@ export function Experience() {
     </section>
   );
 }
+
