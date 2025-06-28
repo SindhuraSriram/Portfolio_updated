@@ -7,14 +7,14 @@ const education = [
     degree: 'Master of Science - MS, Computer and Information Sciences',
     date: 'January 2023 - December 2024',
     location: 'Gainesville, Florida',
-    image: 'https://images.unsplash.com/photo-1541339907198-e08756dedf3f?auto=format&fit=crop&q=80&w=1000'
+    image: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fcourses.flvc.org%2FCollege%2FFlorida&psig=AOvVaw2CRzm5u4f5EuoVkb80ua-O&ust=1751236019614000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCLiZld-UlY4DFQAAAAAdAAAAABAE'
   },
   {
     school: 'SASTRA University',
     degree: 'Bachelor of Technology - BTech, Computer Science',
     date: 'June 2016 - May 2020',
     location: 'Thanjavur, India',
-    image: 'https://images.unsplash.com/photo-1592280771190-3e2e4d571952?auto=format&fit=crop&q=80&w=1000'
+    image: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.biophysics.org%2Fimportantdates%2Fbig-data-and-machine-learning-era-modeling-of-cells-and-systems&psig=AOvVaw3h6oTM5_ZgbswLpVDmcIyc&ust=1751236117628000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCKja_I6VlY4DFQAAAAAdAAAAABAE'
   }
 ];
 
