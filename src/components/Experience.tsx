@@ -49,13 +49,16 @@ const experiences = [
     role: 'Systems Engineer - Data Modeler',
     date: 'September 2021 - December 2022',
     icon: Database,
-    tech: 'Erwin Data Modeler, Teradata, Hive, Oracle SQL, Snowflake, Collibra, Data Warehousing, ETL',
+    tech: 'Erwin Data Modeler, Teradata, Hive, Oracle SQL, Snowflake, Collibra, Apache Kafka, AWS Lambda, Kubernetes, Data Warehousing, ETL',
     description: [
       'Spearheaded data management initiatives, increasing Citi Credit Corp’s profitability by 4% through advanced warehousing and ETL techniques.',
       'Led the design and implementation of comprehensive data models using Erwin, HiveQL, Teradata, and Oracle SQL, boosting customer satisfaction by 25%.',
       'Enhanced metadata governance by automating Collibra DGC workflows, reducing data inconsistencies by 20% across a 50,000+ user dataset.',
       'Optimized data retrieval and reporting processes, accelerating query execution times by 30% through schema restructuring and query optimization.',
-      'Built scalable ETL pipelines to standardize data across multiple sources, minimizing integration errors by 25%.'
+      'Built scalable ETL pipelines to standardize data across multiple sources, minimizing integration errors by 25%.',
+      'Integrated Apache Kafka for real-time data ingestion and stream processing, reducing batch processing latency by 35%.',
+      'Leveraged AWS Lambda functions for lightweight compute tasks and event-driven ETL triggers within serverless data workflows.',
+      'Deployed containerized data services and pipeline components using Kubernetes (EKS), improving scalability and resource efficiency across environments.'
     ]
   },
   {
