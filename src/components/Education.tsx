@@ -7,14 +7,14 @@ const education = [
     degree: 'Master of Science - MS, Computer and Information Sciences',
     date: 'January 2023 - December 2024',
     location: 'Gainesville, Florida',
-    image: 'https://images.unsplash.com/photo-1541339907198-e08756dedf3f?auto=format&fit=crop&q=80&w=1000' // working image
+    image: 'https://courses.flvc.org/ProfileContent/Images/29-UF1f67b27.jpg' 
   },
   {
     school: 'SASTRA University',
     degree: 'Bachelor of Technology - BTech, Computer Science',
     date: 'June 2016 - May 2020',
     location: 'Thanjavur, India',
-    image: 'https://images.unsplash.com/photo-1592280771190-3e2e4d571952?auto=format&fit=crop&q=80&w=1000' // working image
+    image: 'https://www.biophysics.org/Portals/0/EasyDNNNews/13575/images/SASTRA-use-instead-600-600-p-L-97.jpg' 
   }
 ];
 
