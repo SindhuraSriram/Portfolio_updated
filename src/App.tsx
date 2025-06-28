@@ -16,6 +16,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 export function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const [views, setViews] = useState<number | null>(null);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -25,26 +26,36 @@ export function App() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  useEffect(() => {
+    fetch('https://api.countapi.xyz/hit/sindhura-sriram.com/home')
+      .then(res => res.json())
+      .then(data => setViews(data.value));
+  }, []);
+
   const menuItems = ['Home', 'About', 'Experience', 'Projects', 'Education', 'Contact'];
 
   return (
     <div className="min-h-screen bg-white dark:bg-dark transition-colors duration-200">
       <SEO />
       <ScrollProgress />
-      
-      <nav className={`fixed top-0 w-full z-50 transition-all duration-300 ${
-        isScrolled ? 'bg-white/90 dark:bg-dark/90 backdrop-blur-sm shadow-md dark:shadow-gray-800' : 'bg-transparent'
-      }`}>
+
+      <nav
+        className={`fixed top-0 w-full z-50 transition-all duration-300 ${
+          isScrolled
+            ? 'bg-white/90 dark:bg-dark/90 backdrop-blur-sm shadow-md dark:shadow-gray-800'
+            : 'bg-transparent'
+        }`}
+      >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between h-20 items-center">
-            <motion.span 
+            <motion.span
               initial={{ opacity: 0, x: -20 }}
               animate={{ opacity: 1, x: 0 }}
               className="text-2xl font-bold text-gradient"
             >
               SS
             </motion.span>
-            
+
             <div className="flex items-center space-x-4">
               <ThemeToggle />
               <button
@@ -105,8 +116,15 @@ export function App() {
       </main>
 
       <footer className="bg-gray-50 dark:bg-dark-card py-12">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <p className="text-gray-600 dark:text-gray-400">© 2024 Sindhura Sriram. All rights reserved.</p>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-2">
+          <p className="text-gray-600 dark:text-gray-400">
+            © 2024 Sindhura Sriram. All rights reserved.
+          </p>
+          {views !== null && (
+            <p className="text-gray-500 dark:text-gray-400 text-sm">
+              This site has been viewed <strong>{views}</strong> times.
+            </p>
+          )}
         </div>
       </footer>
 
