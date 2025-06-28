@@ -17,6 +17,7 @@ export function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const [views, setViews] = useState<number | null>(null);
+  const [viewsError, setViewsError] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -27,10 +28,35 @@ export function App() {
   }, []);
 
   useEffect(() => {
-    fetch('https://api.countapi.xyz/hit/sindhura-sriram.com/home')
-      .then(res => res.json())
-      .then(data => setViews(data.value));
+    const fetchViews = async () => {
+      try {
+        const response = await fetch('https://api.countapi.xyz/hit/sindhura-sriram.com/home');
+        if (!response.ok) {
+          throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        const data = await response.json();
+        setViews(data.value);
+        setViewsError(false);
+      } catch (error) {
+        console.error('Failed to fetch view count:', error);
+        setViewsError(true);
+        // Fallback: try to get stored view count from localStorage
+        const storedViews = localStorage.getItem('portfolio-views');
+        if (storedViews) {
+          setViews(parseInt(storedViews, 10));
+        }
+      }
+    };
+
+    fetchViews();
   }, []);
+
+  // Store views in localStorage as backup
+  useEffect(() => {
+    if (views !== null && !viewsError) {
+      localStorage.setItem('portfolio-views', views.toString());
+    }
+  }, [views, viewsError]);
 
   const menuItems = ['Home', 'About', 'Experience', 'Projects', 'Education', 'Contact'];
 
@@ -123,6 +149,9 @@ export function App() {
           {views !== null && (
             <p className="text-gray-500 dark:text-gray-400 text-sm">
               This site has been viewed <strong>{views}</strong> times.
+              {viewsError && (
+                <span className="text-xs text-gray-400 ml-1">(cached)</span>
+              )}
             </p>
           )}
         </div>
