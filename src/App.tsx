@@ -17,7 +17,6 @@ export function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const [views, setViews] = useState<number | null>(null);
-  const [viewsError, setViewsError] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -30,33 +29,47 @@ export function App() {
   useEffect(() => {
     const fetchViews = async () => {
       try {
-        const response = await fetch('https://api.countapi.xyz/hit/sindhura-sriram.com/home');
-        if (!response.ok) {
-          throw new Error(`HTTP error! status: ${response.status}`);
+        // Try multiple backup services
+        const services = [
+          'https://api.countapi.xyz/hit/sindhura-sriram.com/home',
+          'https://api.visits.dev/hit/sindhura-sriram.com',
+          // Add more backup services here
+        ];
+
+        for (const service of services) {
+          try {
+            const response = await fetch(service);
+            if (response.ok) {
+              const data = await response.json();
+              setViews(data.value || data.count || data.visits);
+              return; // Success, exit the loop
+            }
+          } catch (error) {
+            console.warn(`Service ${service} failed:`, error);
+            continue; // Try next service
+          }
         }
-        const data = await response.json();
-        setViews(data.value);
-        setViewsError(false);
-      } catch (error) {
-        console.error('Failed to fetch view count:', error);
-        setViewsError(true);
-        // Fallback: try to get stored view count from localStorage
+
+        // If all services fail, use localStorage as fallback
         const storedViews = localStorage.getItem('portfolio-views');
-        if (storedViews) {
-          setViews(parseInt(storedViews, 10));
-        }
+        const currentViews = storedViews ? parseInt(storedViews, 10) : 0;
+        const newViews = currentViews + 1;
+        localStorage.setItem('portfolio-views', newViews.toString());
+        setViews(newViews);
+        
+      } catch (error) {
+        console.error('All view counting services failed:', error);
+        // Simple fallback counter
+        const storedViews = localStorage.getItem('portfolio-views');
+        const currentViews = storedViews ? parseInt(storedViews, 10) : 0;
+        const newViews = currentViews + 1;
+        localStorage.setItem('portfolio-views', newViews.toString());
+        setViews(newViews);
       }
     };
 
     fetchViews();
   }, []);
-
-  // Store views in localStorage as backup
-  useEffect(() => {
-    if (views !== null && !viewsError) {
-      localStorage.setItem('portfolio-views', views.toString());
-    }
-  }, [views, viewsError]);
 
   const menuItems = ['Home', 'About', 'Experience', 'Projects', 'Education', 'Contact'];
 
@@ -149,9 +162,6 @@ export function App() {
           {views !== null && (
             <p className="text-gray-500 dark:text-gray-400 text-sm">
               This site has been viewed <strong>{views}</strong> times.
-              {viewsError && (
-                <span className="text-xs text-gray-400 ml-1">(cached)</span>
-              )}
             </p>
           )}
         </div>
