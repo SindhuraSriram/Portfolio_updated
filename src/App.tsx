@@ -32,44 +32,20 @@ export function App() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+
   useEffect(() => {
-    // Only run on client side after component is mounted
-    if (!isClient) return;
+  if (!isClient) return;
 
-    const getVisitCount = () => {
-      try {
-        // Get current timestamp
-        const now = Date.now();
-        const oneDay = 24 * 60 * 60 * 1000; // 24 hours in milliseconds
-        
-        // Get stored data
-        const storedViews = localStorage.getItem('portfolio-views');
-        const lastVisitTime = localStorage.getItem('portfolio-last-visit');
-        
-        let currentViews = storedViews ? parseInt(storedViews, 10) : 1247;
-        const lastVisit = lastVisitTime ? parseInt(lastVisitTime, 10) : 0;
-        
-        // Check if it's been more than 24 hours since last visit
-        if (now - lastVisit > oneDay) {
-          currentViews += 1;
-          localStorage.setItem('portfolio-views', currentViews.toString());
-          localStorage.setItem('portfolio-last-visit', now.toString());
-        }
-        
-        setViews(currentViews);
-        
-      } catch (error) {
-        console.warn('localStorage not available, using fallback:', error);
-        // Fallback: generate a realistic number based on current time
-        const fallbackViews = 1250 + Math.floor((Date.now() / 86400000) % 100);
-        setViews(fallbackViews);
-      }
-    };
+  fetch('https://api.countapi.xyz/hit/sindhura-sriram.com/home')
+    .then((res) => res.json())
+    .then((data) => {
+      setViews(data.value);
+    })
+    .catch((err) => {
+      console.error('Failed to fetch visit count:', err);
+    });
+}, [isClient]);
 
-    // Small delay to ensure everything is loaded
-    const timer = setTimeout(getVisitCount, 200);
-    return () => clearTimeout(timer);
-  }, [isClient]);
 
   const menuItems = ['Home', 'About', 'Experience', 'Projects', 'Education', 'Contact'];
 
