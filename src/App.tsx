@@ -33,18 +33,25 @@ export function App() {
   }, []);
 
 
-  useEffect(() => {
+ useEffect(() => {
   if (!isClient) return;
 
-  fetch('https://api.countapi.xyz/hit/sindhura-sriram.com/home')
-    .then((res) => res.json())
-    .then((data) => {
+  const fetchViews = async () => {
+    try {
+      const response = await fetch(
+        'https://api.countapi.xyz/hit/sindhura-sriram.com/home'
+      );
+      const data = await response.json();
       setViews(data.value);
-    })
-    .catch((err) => {
-      console.error('Failed to fetch visit count:', err);
-    });
+    } catch (err) {
+      console.error('Failed to fetch view count:', err);
+      setViews(1250); // fallback
+    }
+  };
+
+  fetchViews();
 }, [isClient]);
+
 
 
   const menuItems = ['Home', 'About', 'Experience', 'Projects', 'Education', 'Contact'];
