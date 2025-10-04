@@ -1,5 +1,9 @@
 import React, { useState } from 'react';
-import { Cloud, Bot, Shield, Brain, Activity, Cpu, Camera, MessageSquare, ChevronDown, ChevronUp } from 'lucide-react';
+import {
+  Cloud, Bot, Shield, Brain, Activity, Cpu, Camera, MessageSquare,
+  ChevronDown, ChevronUp,
+  BrainCircuit, Workflow, Stethoscope, Globe2, Scan, CreditCard
+} from 'lucide-react';
 import { AnimatedSection } from './shared/AnimatedSection';
 
 const projects = [
