@@ -46,7 +46,7 @@ const experiences = [
   {
     company: 'Tata Consultancy Services (Citi Credit Corp)',
     location: 'Hyderabad, India',
-    role: 'Systems Engineer - Data Modeler',
+    role: 'Systems Engineer - Data Engineer',
     date: 'September 2021 - December 2022',
     icon: Database,
     tech: 'Erwin Data Modeler, Teradata, Hive, Oracle SQL, Snowflake, Collibra, Apache Kafka, AWS Lambda, Kubernetes, Data Warehousing, ETL',
