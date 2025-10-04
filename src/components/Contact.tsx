@@ -12,8 +12,8 @@ export function Contact() {
             {
               icon: Mail,
               title: 'Email',
-              content: 'sriramsindhura@gmail.com',
-              href: 'mailto:sriramsindhura@gmail.com'
+              content: 'sindhurasriram123@gmail.com',
+              href: 'mailto:sindhurasriram123@gmail.com'
             },
             {
               icon: Phone,
