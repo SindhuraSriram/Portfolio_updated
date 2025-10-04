@@ -4,7 +4,7 @@ import { SkillCard } from './shared/SkillCard';
 
 const skills = {
   'Programming Languages': [
-    'Python', 'Java', 'C++', 'JavaScript', 'R', 'SAS', 'MATLAB', 'HTML/CSS', 'XML', React.js
+    'Python', 'Java', 'C++', 'JavaScript', 'R', 'SAS', 'MATLAB', 'HTML/CSS', 'XML', 'React.js'
   ],
   'Machine Learning & AI': [
     'TensorFlow', 'PyTorch', 'Keras', 'Scikit-learn', 'XGBoost', 'OpenCV',
