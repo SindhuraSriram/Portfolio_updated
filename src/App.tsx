@@ -19,11 +19,12 @@ export function App() {
   const [views, setViews] = useState<number>(0);
   const [isClient, setIsClient] = useState(false);
 
-  // Set client-side flag
+  // ✅ Mark client-side mount
   useEffect(() => {
     setIsClient(true);
   }, []);
 
+  // ✅ Track scroll position for navbar style
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 50);
@@ -32,36 +33,35 @@ export function App() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  // ✅ Fetch view count from CountAPI (with valid namespace)
+  useEffect(() => {
+    if (!isClient) return;
 
- useEffect(() => {
-  if (!isClient) return;
+    const fetchViews = async () => {
+      try {
+        // Use underscore instead of dot — CountAPI does not allow dots in namespace/key
+        const response = await fetch(
+          'https://api.countapi.xyz/hit/sindhura_sriram/home'
+        );
+        const data = await response.json();
+        setViews(data.value);
+      } catch (err) {
+        console.error('Failed to fetch view count:', err);
+        setViews(1250); // fallback in case API fails
+      }
+    };
 
-  const fetchViews = async () => {
-    try {
-      const response = await fetch(
-        'https://api.countapi.xyz/hit/sindhura-sriram.com/home'
-      );
-      const data = await response.json();
-      setViews(data.value);
-    } catch (err) {
-      console.error('Failed to fetch view count:', err);
-      setViews(1250); // fallback
-    }
-  };
-
-  fetchViews();
-}, [isClient]);
-
-
+    fetchViews();
+  }, [isClient]);
 
   const menuItems = ['Home', 'About', 'Experience', 'Projects', 'Education', 'Contact'];
 
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId.toLowerCase());
     if (element) {
-      element.scrollIntoView({ 
+      element.scrollIntoView({
         behavior: 'smooth',
-        block: 'start' 
+        block: 'start',
       });
     }
     setIsMenuOpen(false);
@@ -166,7 +166,7 @@ export function App() {
             © 2024 Sindhura Sriram. All rights reserved.
           </p>
           {isClient && views > 0 && (
-            <motion.p 
+            <motion.p
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.5 }}
