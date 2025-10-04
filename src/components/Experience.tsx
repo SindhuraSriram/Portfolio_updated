@@ -6,7 +6,7 @@ const experiences = [
   {
     company: 'University of Florida (IFAS)',
     location: 'Gainesville, FL, United States',
-    role: 'OPS Research Technician',
+    role: 'Machine Learning Engineer',
     date: 'April 2024 - Present',
     icon: Globe,
     tech: 'Machine Learning, Deep Learning, Predictive Analytics, Time Series Analysis, Data Preprocessing and Feature Engineering, Long Short-Term Memory (LSTM), Convolutional Neural Networks (CNN), Remote Sensing',
