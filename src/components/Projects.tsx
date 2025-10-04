@@ -39,7 +39,7 @@ const projects = [
       'Implemented context-aware responses with RAG (Retrieval Augmented Generation) using Chainlit for interactive UI',
       'Optimized for CPU-based systems with 16GB+ RAM, ensuring accessible deployment'
     ],
-    url: 'https://github.com/SindhuraSriram/Llama2-medical-chatbot'
+    url: 'https://github.com/SindhuraSriram/Llama2-based-Medical-Chatbot'
   },
  {
   title: 'Arctic RTS: Ice Depletion Pattern Recognition',
@@ -58,7 +58,7 @@ const projects = [
     title: 'Volumetric quantifications and dynamics of areas undergoing retrogressive thaw slumping in the Northern Hemisphere',
     url: 'https://www.nature.com/articles/s41467-025-62017-0'
   },
-  url: 'https://github.com/SindhuraSriram/Volumetric-Quantification-of-Active-Retrogressive-Thaw-Slumps-in-the-Arctic'
+  url: 'https://github.com/SindhuraSriram/DEMChangeDetection'
 },
 
     {
@@ -98,29 +98,24 @@ const projects = [
     url: 'https://github.com/SindhuraSriram/Credit-fraud-with-imbalanced-datasets'
   },
   {
-    title: 'Chronic Kidney Disease Prediction',
-    icon: TestTube,
-    tech: 'Python, SVM, Neural Networks',
-    date: 'Oct 2020',
-    description: [
-      'Employed SVM and Neural Networks achieving 95% accuracy in disease detection',
-      'Utilized clinical data for early diagnosis and treatment planning',
-      'Enhanced medical diagnostics through AI implementation'
-    ],
-    url: 'https://github.com/SindhuraSriram/PREDICTION-OF-CHRONIC-KIDNEY-DISEASE-USING-SUPPORT-VECTOR-MACHINE-AND-NEURAL-NETWORK'
+  title: 'Optimized Mobile Offloading',
+  icon: Cpu,
+  tech: 'Machine Learning, Mobile Edge Computing',
+  date: 'May 2019',
+  description: [
+    'Devised ML strategies to enhance computation offloading efficiency on mobile-edge systems',
+    'Optimized trade-offs in network latency, energy consumption, and throughput',
+    'Implemented simulations comparing offloading vs local computation under realistic constraints',
+    'Published in ICASISIET 2019 (peer-reviewed conference proceedings)'
+  ],
+  publication: {
+    conference: 'ICASISIET',
+    year: 2019,
+    title: 'Optimized Mobile Offloading through Machine Learning',
+    url: 'https://drive.google.com/file/d/1NjAKAm4NUVMQ9CFu6QoUZ4wVdV91li4g/view?usp=sharing'
   },
-  {
-    title: 'Optimized Mobile Offloading',
-    icon: Cpu,
-    tech: 'Machine Learning, Mobile Edge Computing',
-    date: 'May 2019',
-    description: [
-      'Devised ML strategies to enhance computation offloading efficiency',
-      'Optimized network traffic management and energy consumption',
-      'Published in ICASISIET 2019'
-    ],
-    url: 'https://github.com/SindhuraSriram/Optimized-Mobile-Offloading-through-Machine-Learning'
-  }
+  url: 'https://github.com/SindhuraSriram/Optimized-Mobile-Offloading-through-Machine-Learning'
+}
 ];
 
 export function Projects() {
