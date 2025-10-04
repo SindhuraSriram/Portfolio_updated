@@ -24,31 +24,23 @@ export function App() {
     setIsClient(true);
   }, []);
 
-  // ✅ Track scroll position for navbar style
-  useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 50);
-    };
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
-
-  useEffect(() => {
+useEffect(() => {
   if (!isClient) return;
 
   const fetchViews = async () => {
-  try {
-    const response = await fetch(
-      'https://api.counterapi.dev/sindhura_sriram/home?increment=true'
-    );
-    if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
-    const data = await response.json();
-    setViews(data.value ?? 1250);
-  } catch (err) {
-    console.error('Failed to fetch view count:', err);
-    setViews(1250);
-  }
-};
+    try {
+      // Fetch directly from your Netlify function
+      const response = await fetch('/.netlify/functions/views');
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
+      }
+      const data = await response.json();
+      setViews(data.value ?? 1250);
+    } catch (err) {
+      console.error('Failed to fetch view count:', err);
+      setViews(1250);
+    }
+  };
 
   fetchViews();
 }, [isClient]);
