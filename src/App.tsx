@@ -37,20 +37,18 @@ export function App() {
   if (!isClient) return;
 
   const fetchViews = async () => {
-    try {
-      const proxyUrl = 'https://corsproxy.io/?';
-      const targetUrl = 'https://api.countapi.xyz/hit/sindhura_sriram/home';
-      const response = await fetch(`${proxyUrl}${encodeURIComponent(targetUrl)}`);
-      
-      if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
-      
-      const data = await response.json();
-      setViews(data.value);
-    } catch (err) {
-      console.error('Failed to fetch view count:', err);
-      setViews(1250); // fallback if CountAPI or proxy fails
-    }
-  };
+  try {
+    const response = await fetch(
+      'https://api.counterapi.dev/sindhura_sriram/home?increment=true'
+    );
+    if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
+    const data = await response.json();
+    setViews(data.value ?? 1250);
+  } catch (err) {
+    console.error('Failed to fetch view count:', err);
+    setViews(1250);
+  }
+};
 
   fetchViews();
 }, [isClient]);
