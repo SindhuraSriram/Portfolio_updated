@@ -41,6 +41,26 @@ const projects = [
     ],
     url: 'https://github.com/SindhuraSriram/Llama2-medical-chatbot'
   },
+ {
+  title: 'Arctic RTS: Ice Depletion Pattern Recognition',
+  icon: Globe2,
+  tech: 'Python, GIS, Mask R-CNN, Satellite Imagery, QGIS',
+  date: 'Oct 2023',
+  description: [
+    'Developed a Python-based Mask R-CNN model to detect Arctic ice depletion patterns in retrogressive thaw slumps',
+    'Processed and analyzed large ArcticDEM and satellite datasets using GIS pipelines to extract spatial and volumetric trends',
+    'Deployed a scalable tool for monitoring ice melt and climate change impacts across multiple regions',
+    'Contributed results to a peer-reviewed publication in *Nature Communications* on volumetric quantification of permafrost thaw slumps'
+  ],
+  publication: {
+    journal: 'Nature Communications',
+    year: 2025,
+    title: 'Volumetric quantifications and dynamics of areas undergoing retrogressive thaw slumping in the Northern Hemisphere',
+    url: 'https://www.nature.com/articles/s41467-025-62017-0'
+  },
+  url: 'https://github.com/SindhuraSriram/Volumetric-Quantification-of-Active-Retrogressive-Thaw-Slumps-in-the-Arctic'
+},
+
     {
     title: 'Dental X-Ray Segmentation',
     icon: Scan,
@@ -64,18 +84,6 @@ const projects = [
       'Achieved 92% transcription accuracy and 72% data redaction success'
     ],
     url: 'https://github.com/SindhuraSriram/ContextualAI---A-Personal-Assistant-with-Voice-Recognition-and-Contextual-Understanding'
-  },
-  {
-    title: 'Arctic RTS: Ice Depletion Pattern Recognition',
-    icon: Globe2,
-    tech: 'Python, GIS, Mask R-CNN, Satellite Imagery, QGIS',
-    date: 'Oct 2023',
-    description: [
-      'Developed a Python-based Mask R-CNN model to study Arctic ice depletion patterns',
-      'Processed and analyzed large environmental datasets for climate research',
-      'Provided a scalable tool for monitoring ice melt and climate change impacts'
-    ],
-    url: 'https://github.com/SindhuraSriram/Volumetric-Quantification-of-Active-Retrogressive-Thaw-Slumps-in-the-Arctic'
   },
   {
     title: 'Online Payments Fraud Detection',
@@ -112,17 +120,6 @@ const projects = [
       'Published in ICASISIET 2019'
     ],
     url: 'https://github.com/SindhuraSriram/Optimized-Mobile-Offloading-through-Machine-Learning'
-  },
-  {
-    title: 'COVID-19 Face Mask Detection',
-    icon: Camera,
-    tech: 'Python, CNN, Computer Vision',
-    date: 'Feb 2019',
-    description: [
-      'Implemented CNN-based system for real-time mask detection with 98% accuracy',
-      'Enhanced public health safety during COVID-19',
-      'Contributed to community safety through technology'
-    ]
   }
 ];
 
