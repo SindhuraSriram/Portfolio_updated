@@ -4,8 +4,34 @@ import { AnimatedSection } from './shared/AnimatedSection';
 
 const projects = [
   {
+  title: 'Gemini Copilot Agents',
+  icon: BrainCircuit,
+  tech: 'Python / TypeScript, Gemini, OpenAI / Copilot APIs, Agent Framework, GitHub Actions',
+  date: 'Aug 2025',
+  description: [
+    'Built autonomous agents using Gemini / OpenAI APIs to assist in development workflows',
+    'Integrated with GitHub Copilot to allow automated code generation, PR creation, and context-aware suggestions',
+    'Deployed agents via GitHub Actions for CI/CD integration and continuous deployment',
+    'Handled task orchestration, error recovery, and multi-step workflows across repositories'
+  ],
+  url: 'https://github.com/SindhuraSriram/gemini-copilot-agents'
+},
+  {
+  title: 'Airtable Contractor Automation',
+  icon: Workflow,
+  tech: 'Python, Airtable API, FastAPI, Zapier, JSON Compression',
+  date: 'May 2025',
+  description: [
+    'Built an end-to-end automation pipeline for contractor onboarding and lead shortlisting using Airtable API',
+    'Implemented JSON compression and decompression for efficient record updates within Airtable bases',
+    'Integrated LLM-based applicant review system to evaluate resumes and rank candidates automatically',
+    'Streamlined operations by connecting FastAPI backend with Airtable scripts and Zapier triggers'
+  ],
+  url: 'https://github.com/SindhuraSriram/airtable-contractor-automation'
+},
+  {
     title: 'Llama2 Medical Chatbot',
-    icon: MessageSquare,
+    icon: Stethoscope,
     tech: 'Python, Llama2, Langchain, Chainlit, Sentence Transformers',
     date: 'Nov 2024',
     description: [
@@ -17,7 +43,7 @@ const projects = [
   },
     {
     title: 'Dental X-Ray Segmentation',
-    icon: Brain,
+    icon: Scan,
     tech: 'TensorFlow, Keras, OpenCV, U-Net, VGG16',
      date: 'Jun 2024',
     description: [
@@ -41,7 +67,7 @@ const projects = [
   },
   {
     title: 'Arctic RTS: Ice Depletion Pattern Recognition',
-    icon: Cloud,
+    icon: Globe2,
     tech: 'Python, GIS, Mask R-CNN, Satellite Imagery, QGIS',
     date: 'Oct 2023',
     description: [
@@ -53,7 +79,7 @@ const projects = [
   },
   {
     title: 'Online Payments Fraud Detection',
-    icon: Shield,
+    icon: CreditCard,
     tech: 'Python, Scikit-Learn, XGBoost, AWS',
     date: 'Sep 2022',
     description: [
@@ -65,7 +91,7 @@ const projects = [
   },
   {
     title: 'Chronic Kidney Disease Prediction',
-    icon: Activity,
+    icon: TestTube,
     tech: 'Python, SVM, Neural Networks',
     date: 'Oct 2020',
     description: [
