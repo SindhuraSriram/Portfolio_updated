@@ -33,26 +33,27 @@ export function App() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  // ✅ Fetch view count from CountAPI (with valid namespace)
   useEffect(() => {
-    if (!isClient) return;
+  if (!isClient) return;
 
-    const fetchViews = async () => {
-      try {
-        // Use underscore instead of dot — CountAPI does not allow dots in namespace/key
-        const response = await fetch(
-          'https://api.countapi.xyz/hit/sindhura_sriram/home'
-        );
-        const data = await response.json();
-        setViews(data.value);
-      } catch (err) {
-        console.error('Failed to fetch view count:', err);
-        setViews(1250); // fallback in case API fails
-      }
-    };
+  const fetchViews = async () => {
+    try {
+      const proxyUrl = 'https://corsproxy.io/?';
+      const targetUrl = 'https://api.countapi.xyz/hit/sindhura_sriram/home';
+      const response = await fetch(`${proxyUrl}${encodeURIComponent(targetUrl)}`);
+      
+      if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
+      
+      const data = await response.json();
+      setViews(data.value);
+    } catch (err) {
+      console.error('Failed to fetch view count:', err);
+      setViews(1250); // fallback if CountAPI or proxy fails
+    }
+  };
 
-    fetchViews();
-  }, [isClient]);
+  fetchViews();
+}, [isClient]);
 
   const menuItems = ['Home', 'About', 'Experience', 'Projects', 'Education', 'Contact'];
 
