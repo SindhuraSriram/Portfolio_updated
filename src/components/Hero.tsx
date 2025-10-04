@@ -28,7 +28,7 @@ export function Hero() {
               <Linkedin size={24} />
             </motion.a>
             <motion.a
-              href="mailto:sindhura.sriram@ufl.edu"
+              href="mailto:sindhurasriram123@gmail.com"
               whileHover={{ scale: 1.1 }}
               className="p-3 bg-white dark:bg-dark-card rounded-full shadow-lg hover:text-primary transition-colors"
             >
