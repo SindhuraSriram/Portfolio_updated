@@ -4,18 +4,18 @@ import { SkillCard } from './shared/SkillCard';
 
 const skills = {
   'Programming Languages': [
-    'Python', 'Java', 'C++', 'JavaScript', 'R', 'SAS', 'MATLAB', 'HTML/CSS', 'XML'
+    'Python', 'Java', 'C++', 'JavaScript', 'R', 'SAS', 'MATLAB', 'HTML/CSS', 'XML', React.js
   ],
   'Machine Learning & AI': [
     'TensorFlow', 'PyTorch', 'Keras', 'Scikit-learn', 'XGBoost', 'OpenCV',
-    'LangChain', 'Hugging Face', 'LLaMA', 'PySpark', 'NLP', 'Generative AI', 'Neural Networks'
+    'LangChain', 'LangGraph', 'Hugging Face', 'LLaMA', 'PySpark', 'NLP', 'Generative AI', 'Neural Networks'
   ],
   'Databases & Storage': [
     'PostgreSQL', 'Oracle SQL', 'MySQL', 'MongoDB', 'Neo4J',
     'Teradata', 'HiveQL', 'Snowflake', 'FAISS', 'Qdrant', 'ChromaDB'
   ],
   'Cloud & MLOps': [
-    'AWS (SageMaker, Glue, Lambda, Kinesis, CloudWatch)', 'Azure (Databricks, App Services)', 
+    'AWS (SageMaker, S3, Glue, Lambda, Kinesis, CloudWatch)', 'Azure (Databricks, Synapse, App Services)', 
     'Docker', 'Kubernetes', 'MLflow', 'FastAPI', 'Anaconda'
   ],
   'Data Engineering & ETL': [
